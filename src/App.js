@@ -1,26 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
+import {BrowserRouter as Router, Route} from 'react-router-dom';
 import './App.css';
+import Footer from './components/footerComponents/footer';
+import Homepage from './components/pages/homePage';
+import CheckPage from './components/pages/checkPage';
+import CountdownTimer from './components/pages/drawPage';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+    render(){
+    return (          
+          <div className="bg-cl">
+                           
+              <Router >
+                <Route exact path="/" component={Homepage}/>
+                <Route path="/draw" component={CountdownTimer} />
+                <Route path="/check" component={CheckPage} />
+              </Router>
+             {/* <CountdownTimer/> */}
+             {/* // <Footer/> */}
+          </div>       
+      
+    );
+  }
 }
 
 export default App;
