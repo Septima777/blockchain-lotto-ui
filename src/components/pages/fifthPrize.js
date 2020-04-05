@@ -1,5 +1,14 @@
 import React, { useEffect, useState, Component } from "react";
 import './fifthPrize.css';
+import num1 from './image/num1.png';
+import num2 from './image/num2.png';
+import num3 from './image/num3.png';
+import num4 from './image/num4.png';
+import num5 from './image/num5.png';
+import num6 from './image/num6.png';
+import num7 from './image/num7.png';
+import num8 from './image/num8.png';
+import num9 from './image/num9.png';
 
 function FifthPrizeName() {
     return (
@@ -72,7 +81,6 @@ function DrawingCircle() {
 
                         <div className="col-2">
                             <div class="box">
-                            {/* <img className="image" src={logo} alt="Logo" /> */}
                                 <div id="balls">
                                     <div id="one" class="one ball"></div>
                                     <div id="two" class="two ball"></div>
@@ -83,6 +91,7 @@ function DrawingCircle() {
                                     <div id="seven" class="seven ball"></div>
                                     <div id="eight" class="eight ball"></div>
                                     <div id="nine" class="nine ball"></div>
+                                    <div id="zero" class="zero ball"></div>
                                 </div>            
                             </div>
                         </div>
@@ -99,6 +108,7 @@ function DrawingCircle() {
                                     <div id="seven" class="seven ball"></div>
                                     <div id="eight" class="eight ball"></div>
                                     <div id="nine" class="nine ball"></div>
+                                    <div id="zero" class="zero ball"></div>
                                 </div>            
                             </div>
                         </div>
@@ -115,6 +125,7 @@ function DrawingCircle() {
                                     <div id="seven" class="seven ball"></div>
                                     <div id="eight" class="eight ball"></div>
                                     <div id="nine" class="nine ball"></div>
+                                    <div id="zero" class="zero ball"></div>
                                 </div>            
                             </div>
                         </div>
@@ -132,6 +143,7 @@ function DrawingCircle() {
                                     <div id="seven" class="seven ball"></div>
                                     <div id="eight" class="eight ball"></div>
                                     <div id="nine" class="nine ball"></div>
+                                    <div id="zero" class="zero ball"></div>
                                 </div>            
                             </div>
                         </div>
@@ -148,6 +160,7 @@ function DrawingCircle() {
                                     <div id="seven" class="seven ball"></div>
                                     <div id="eight" class="eight ball"></div>
                                     <div id="nine" class="nine ball"></div>
+                                    <div id="zero" class="zero ball"></div>
                                 </div>            
                             </div>
                         </div>
@@ -164,6 +177,7 @@ function DrawingCircle() {
                                     <div id="seven" class="seven ball"></div>
                                     <div id="eight" class="eight ball"></div>
                                     <div id="nine" class="nine ball"></div>
+                                    <div id="zero" class="zero ball"></div>
                                 </div>            
                             </div>
                         </div>
@@ -173,29 +187,32 @@ function DrawingCircle() {
 
 function ShowNumber() {
     return (
-        <div className="row num-center">
+        <div className="row">
             <div className="col-2">
-                <section class="stage">
-                    <figure class="ball8">
+            <img className="image" src={num1} alt="num1" id="num_size"/>
+
+                {/* <section class="stage">
+                    <figure class="num">
                         <span class="shadow"></span>
-                        <span class="eight"></span>
+                        <span class="first"></span>
                     </figure>
-                </section>
+                </section> */}
+
             </div>
             <div className="col-2">
-                2
+                <img className="image" src={num5} alt="num5" id="num_size"/>
             </div>
             <div className="col-2">
-                3
+                <img className="image" src={num3} alt="num3" id="num_size"/>
             </div>
             <div className="col-2">
-                4
+                <img className="image" src={num6} alt="num6" id="num_size"/>
             </div>
             <div className="col-2">
-                5
+                <img className="image" src={num7} alt="num7" id="num_size"/>
             </div>
             <div className="col-2">
-                6
+                <img className="image" src={num9} alt="num9" id="num_size"/>
             </div>
 
         </div>
